@@ -1,0 +1,28 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+/* A ajouter pour que le footer reste en bas */
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    /*grow(n'empêche pas de grandire) shrink(empêche de réduire) basis(hauteur_min)*/
+    /* flex: 1 0 auto; */
+    flex-grow: 1;
+}
+
+footer{
+    flex-shrink: 0; /* empêche de réduire */
+    height: 300px;
+}

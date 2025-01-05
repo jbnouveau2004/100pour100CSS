@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #87CEEB; /* ciel bleu */
+}
+
+.scene {
+  perspective: 5000px;
+  transform: scale(0.2);
+}
+
+
+@keyframes rotateHouse {
+  from {
+    transform: rotateX(-25deg) rotateY(0deg) translateZ(0px) translateX(100px);
+  }
+  to {
+    transform: rotateX(-25deg) rotateY(360deg) translateZ(0px) translateX(100px);
+  }
+}
+
+
+
+.terrain{
+  position: relative;
+  width: 2000px;
+  height: 2000px;
+  transform-style: preserve-3d;
+  /* transform: rotateX(-0.5deg) rotateY(0deg) translateZ(4605px) translateX(100px); */
+  animation: rotateHouse 5s linear infinite; /* Animation de rotation */
+}
+
+.herbe{
+  /* transform-origin: center; */
+  position: absolute;
+  width: 2000px;
+  height: 2000px;
+  background-color: green;
+  transform: rotateX(90deg) translateX(-00px) translateY(-00px) translateZ(0px);
+  
+}
+
+.maison1{
+  transform: translateY(797px) translateX(300px) rotateY(90deg);
+}
+
+.maison2{
+  transform: translateY(797px) translateX(1300px) rotateY(-90deg);
+}
+
+.maison3{
+  transform: translateY(797px) translateX(800px) translateZ(500px) rotateY(180deg);
+}
+
+.mairie{
+  transform: translateY(797px) translateX(800px) translateZ(-800px);
+}
+
+.place{
+  transform: translateY(797px) translateX(770px) translateZ(-30px) rotateX(90deg);
+}
