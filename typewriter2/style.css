@@ -16,7 +16,6 @@ body, html, ::before, ::after{
     white-space: nowrap; /* le texte n'est pas coupé */
     border-right: 1px solid; /* le curseur */
     width: 0;
-    /* animation: writer 20s steps(16) infinite 1s; */
     animation: writer 20s linear infinite;
 }
 
