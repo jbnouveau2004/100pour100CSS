@@ -1,0 +1,68 @@
+body, html, ::before, ::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{ /* essentiel au fonctionnement */
+    display: flex;
+    justify-content: center;
+}
+
+.container p{
+    overflow: hidden;
+    font-family: monospace; /* chaque lettre fait le même espace */
+    margin-inline: auto; /* centre en p les caractères au fur et à mesure */
+    white-space: nowrap; /* le texte n'est pas coupé */
+    border-right: 1px solid; /* le curseur */
+    width: 0;
+    animation: writer 5s steps(16) infinite 1s;
+}
+
+@keyframes writer{
+    0%{
+        width: 0;
+    }
+    60%{
+        width: 100%;
+    }
+    100%{
+        width: 100%;
+    }
+
+    /* Clignotement du curseur */
+    0%{
+        border-right: 1px solid;
+    }
+    10%{
+        border-right: none;
+    }
+    20%{
+        border-right: 1px solid;
+    }
+    30%{
+        border-right: none;
+    }
+    40%{
+        border-right: 1px solid;
+    }
+    50%{
+        border-right: none;
+    }
+    60%{
+        border-right: 1px solid;
+    }
+    70%{
+        border-right: none;
+    }
+    80%{
+        border-right: 1px solid;
+    }
+    90%{
+        border-right: none;
+    }
+    100%{
+        border-right: 1px solid;
+    }
+
+}
