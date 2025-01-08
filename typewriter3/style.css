@@ -18,8 +18,7 @@ body, html, ::before, ::after{
 }
 
 .typewriter{
-    display: flex;
-    justify-content: center;
+    display: inline-block;
 }
 
 .typewriter>div>p::after{
@@ -27,7 +26,7 @@ body, html, ::before, ::after{
     display: block;
     overflow: hidden;
     font-family: monospace; /* chaque lettre fait le même espace */
-    margin-inline: auto; /* centre en p les caractères au fur et à mesure */
+    /* margin-inline: auto; pour centrer en p les caractères au fur et à mesure */
     white-space: nowrap; /* le texte n'est pas coupé */
     border-right: 1px solid; /* le curseur */
     width: 0;
