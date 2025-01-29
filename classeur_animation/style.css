@@ -1,0 +1,26 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+.classeur{
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+
+.classeur input{
+  visibility: hidden;
+}
+
+.classeur label>img{
+  width: 100px;
+  height: 400px;
+  object-fit: cover;
+  transition: width 1s;
+  cursor: pointer;
+}
+
+.classeur input:checked + label>img{
+  width: 250px;
+}
