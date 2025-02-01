@@ -4,17 +4,21 @@
   box-sizing: border-box;
 }
 
-.classeur{
+.accordeon{
   display: flex;
   justify-content: center;
   margin: 100px;
 }
 
-.classeur input{
-  visibility: hidden;
+.accordeon input{
+  display: none;
 }
 
-.classeur label>img{
+.accordeon label{
+  margin: 0 5px;
+}
+
+.accordeon label>img{
   width: 100px;
   height: 400px;
   object-fit: cover;
@@ -22,6 +26,6 @@
   cursor: pointer;
 }
 
-.classeur input:checked + label>img{
+.accordeon input:checked + label>img{
   width: 250px;
 }
