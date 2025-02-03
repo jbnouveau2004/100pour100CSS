@@ -4,24 +4,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #87CEEB; /* ciel bleu */
+  width: 90vmin;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border: 2px solid black;
 }
 
 .scene {
   perspective: 5000px;
-  transform: scale(0.2);
+  transform: scale(0.05);
 }
-
-
-@keyframes rotateHouse {
-  from {
-    transform: rotateX(-25deg) rotateY(0deg) translateZ(0px) translateX(100px);
-  }
-  to {
-    transform: rotateX(-25deg) rotateY(360deg) translateZ(0px) translateX(100px);
-  }
-}
-
 
 
 .terrain{
@@ -29,12 +28,33 @@ body {
   width: 2000px;
   height: 2000px;
   transform-style: preserve-3d;
-  /* transform: rotateX(-0.5deg) rotateY(0deg) translateZ(4605px) translateX(100px); */
-  animation: rotateHouse 5s linear infinite; /* Animation de rotation */
+
+  /* rotate: x -1deg;
+  rotate: y 250deg;
+  translate: 0 100px 5000px; */
+
+    /* rotate: x -1deg;
+  rotate: y 300deg;
+  translate: 0 100px 5000px; */
+
+  rotate: x -1deg;
+  rotate: y 400deg;
+  translate: 0 50px 4700px;
+
+
+  /* animation: rotateMap 5s linear infinite; */
+}
+
+@keyframes rotateMap {
+  from {
+    rotate: y 0deg;
+  }
+  to {
+    rotate: y 360deg;
+  }
 }
 
 .herbe{
-  /* transform-origin: center; */
   position: absolute;
   width: 2000px;
   height: 2000px;
