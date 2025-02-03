@@ -19,7 +19,7 @@ body {
 
 .scene {
   perspective: 5000px;
-  transform: scale(0.05);
+  transform: scale(0.03);
 }
 
 
@@ -33,24 +33,27 @@ body {
   rotate: y 250deg;
   translate: 0 100px 5000px; */
 
-    /* rotate: x -1deg;
-  rotate: y 300deg;
-  translate: 0 100px 5000px; */
+    /* rotate: x -1deg; */
+  /* rotate: y 300deg; */
+  translate: 0px 200px 4750px;
+  transform: rotateY(75deg);
 
-  rotate: x -1deg;
-  rotate: y 400deg;
-  translate: 0 50px 4700px;
+  /* rotate: x 15deg; */
+  /* rotate: y 400deg; */
+  /* translate: 0 50px 4750px; */
 
 
-  /* animation: rotateMap 5s linear infinite; */
+  animation: rotateMap 50s linear infinite;
 }
 
 @keyframes rotateMap {
   from {
     rotate: y 0deg;
+    /* transform: rotateY(75deg); */
   }
   to {
     rotate: y 360deg;
+    /* transform: rotateY(75deg); */
   }
 }
 
